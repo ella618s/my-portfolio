@@ -1,11 +1,11 @@
-｀｀/* 全域變數與重置 */
+/* 全局設定 */
 :root {
   --primary-color: #2563eb;
   --primary-hover: #1d4ed8;
   --bg-color: #f8fafc;
   --card-bg: #ffffff;
-  --text-main: #0f172a;
-  --text-muted: #64748b;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
   --border-color: #e2e8f0;
 }
 
@@ -13,22 +13,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 body {
   background-color: var(--bg-color);
-  color: var(--text-main);
+  color: var(--text-primary);
   line-height: 1.6;
 }
 
-/* 導覽列 Flexbox 排版 */
+/* 頂部導覽列 */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2rem;
-  background-color: var(--card-bg);
+  padding: 1.25rem 2rem;
+  background-color: #ffffff;
   border-bottom: 1px solid var(--border-color);
   position: sticky;
   top: 0;
@@ -38,7 +38,6 @@ body {
 .logo {
   font-weight: 700;
   font-size: 1.25rem;
-  color: var(--primary-color);
 }
 
 .nav-links {
@@ -50,7 +49,7 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: var(--text-main);
+  color: var(--text-secondary);
   font-weight: 500;
   transition: color 0.2s;
 }
@@ -59,43 +58,16 @@ body {
   color: var(--primary-color);
 }
 
-/* Hero 區塊 */
-.hero {
-  padding: 5rem 2rem;
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.badge {
-  background-color: #dbeafe;
-  color: var(--primary-color);
-  padding: 0.35rem 0.85rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  font-weight: 600;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  margin: 1.5rem 0 1rem;
-}
-
-.hero p {
-  font-size: 1.125rem;
-  color: var(--text-muted);
-  margin-bottom: 2rem;
-}
-
 /* 按鈕樣式 */
 .btn-primary {
   background-color: var(--primary-color);
-  color: white !important;
+  color: #ffffff !important;
   padding: 0.6rem 1.2rem;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
   display: inline-block;
+  transition: background-color 0.2s;
 }
 
 .btn-primary:hover {
@@ -103,65 +75,104 @@ body {
 }
 
 .btn-secondary {
-  border: 1px solid var(--border-color);
-  color: var(--text-main);
+  background-color: #e2e8f0;
+  color: var(--text-primary);
   padding: 0.6rem 1.2rem;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  margin-left: 0.5rem;
   display: inline-block;
 }
 
-/* 通用 Section 樣式 */
+/* Hero 區塊 */
+.hero {
+  text-align: center;
+  padding: 5rem 1.5rem 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.badge {
+  background-color: #dbeafe;
+  color: var(--primary-color);
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.hero-btns {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* 內容版面 */
 .section {
-  max-width: 1000px;
-  margin: 4rem auto;
-  padding: 0 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
 }
 
 .section-title {
   font-size: 1.75rem;
   margin-bottom: 1.5rem;
-  border-left: 4px solid var(--primary-color);
+  position: relative;
   padding-left: 0.75rem;
 }
 
-.about-card {
-  background: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
+.section-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  bottom: 0.2rem;
+  width: 4px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
 }
 
-/* Skills & Projects 卡片網格排版 (CSS Grid) */
-.skills-grid,
-.projects-grid {
+.about-card, .skill-card, .project-card {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.skills-grid, .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
 
-.skill-card,
-.project-card {
-  background: var(--card-bg);
-  padding: 1.5rem;
-  border-radius: 8px;
-  border: 1px solid var(--border-color);
-}
-
 .project-tag {
   font-size: 0.75rem;
-  font-weight: 700;
   color: var(--primary-color);
+  font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
 
+/* 頁尾 */
 footer {
   text-align: center;
   padding: 2rem;
   border-top: 1px solid var(--border-color);
-  color: var(--text-muted);
-  margin-top: 4rem;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-top: 3rem;
 }
