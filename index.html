@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>個人作品集 | Full-stack Developer Portfolio</title>
+    <title>淑華 Shu-hua Liu | Senior Mobile & Full-stack Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- 頂部導覽列 -->
     <nav class="navbar">
-      <div class="logo">DevPortfolio</div>
+      <div class="logo">Shu-hua.Dev</div>
       <ul class="nav-links">
         <li><a href="#about">關於我</a></li>
+        <li><a href="#experience">工作經歷</a></li>
         <li><a href="#skills">技術技能</a></li>
         <li><a href="#projects">專案作品</a></li>
         <li><a href="#contact" class="btn-primary">聯絡我</a></li>
@@ -21,14 +22,14 @@
     <!-- 主頁 Hero 區塊 -->
     <header class="hero">
       <div class="hero-content">
-        <span class="badge">Seeking Full-stack / Frontend Roles</span>
-        <h1>你好，我是全端工程師</h1>
+        <span class="badge">Senior Mobile Engineer & Full-stack Learner</span>
+        <h1>你好，我是 劉淑華 (Shu-hua Liu)</h1>
         <p>
-          具備強大的程式邏輯底子與全心投入的衝力，專注於現代 Web 開發（React, TypeScript, Node.js），目標在台灣與日本市場打造高質量的 Web 應用程式。
+          擁有 8+ 年開發經驗的資深工程師。擅長 Kotlin/Java、MVVM 架構與 KMP 跨平台開發，目前正全力擴展 TypeScript + React 全端技術，目標投遞台灣與日本市場！
         </p>
         <div class="hero-btns">
-          <a href="#projects" class="btn-primary">查看專案作品</a>
-          <a href="#contact" class="btn-secondary">取得聯繫</a>
+          <a href="https://github.com/ella618s/FishingNavKMP" target="_blank" class="btn-primary">GitHub: FishingNavKMP</a>
+          <a href="mailto:ella618s@yahoo.com.tw" class="btn-secondary">Email 聯繫我</a>
         </div>
       </div>
     </header>
@@ -40,8 +41,25 @@
         <h2 class="section-title">關於我 (About Me)</h2>
         <div class="about-card">
           <p>
-            擁有紮實的系統邏輯觀念與 Mac / Git 開發環境操作能力。目前全心投入現代前端與全端技術架構的實作，致力於透過程式碼解決商業問題。
+            「用好的技術解決實際問題，讓產品越來越穩定、好用。」我擅長從零到一打造產品、重構舊系統與處理極限效能調優。近期獨立運用 Kotlin Multiplatform (KMP) 打造離線航海導航系統，並持續探索 On-device AI 與現代 Web 全端架構，具備極佳的即戰力與團隊架構決策能力。
           </p>
+        </div>
+      </section>
+
+      <!-- 工作經歷區塊 -->
+      <section id="experience" class="section">
+        <h2 class="section-title">核心工作經歷 (Work Experience)</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>獨立軟體開發者 (Mobile / KMP)</h3>
+            <p><strong>2025/02 - 現在</strong></p>
+            <p>獨立開發「海上航海與離線導航系統 (FishingNav KMP)」，運用 KMP + Jetpack Compose 實作跨平台核心邏輯共享，攻克 OSMDroid 離線渲染與 GPS 補償演算法。</p>
+          </div>
+          <div class="skill-card">
+            <h3>Android 工程師 | 三立電視 / 禾智 / 獨立接案</h3>
+            <p><strong>2019 - 2024</strong></p>
+            <p>主導大型 App 舊系統 Java 至 Kotlin 重構、模組化拆解、實作 PiP 直播懸浮視窗、串接 LinePay / Google Pay 第三方金流 SDK 與 WebView 原生通訊。</p>
+          </div>
         </div>
       </section>
 
@@ -50,33 +68,33 @@
         <h2 class="section-title">技術棧 (Tech Stack)</h2>
         <div class="skills-grid">
           <div class="skill-card">
-            <h3>Frontend Base</h3>
-            <p>HTML5, CSS3 (Flexbox/Grid), JavaScript (ES6+)</p>
+            <h3>Mobile & Cross-Platform</h3>
+            <p>Kotlin, Java, KMP, Jetpack Compose, MVVM, Coroutines, Android SDK</p>
           </div>
           <div class="skill-card">
-            <h3>Environment & Tools</h3>
-            <p>macOS, Git / GitHub, VS Code, Vercel</p>
+            <h3>Web & Full-stack (Active)</h3>
+            <p>HTML5, CSS3 (Flexbox/Grid), JavaScript (ES6+), TypeScript, React, Next.js</p>
           </div>
           <div class="skill-card">
-            <h3>In Progress (持續進修)</h3>
-            <p>TypeScript, React, Next.js, Node.js</p>
+            <h3>Tools & Practices</h3>
+            <p>macOS, Git / GitHub, VS Code, Android Studio, Vercel, Retrofit2, CI/CD</p>
           </div>
         </div>
       </section>
 
       <!-- 專案作品區塊 -->
       <section id="projects" class="section">
-        <h2 class="section-title">專案作品 (Featured Projects)</h2>
+        <h2 class="section-title">重點專案 (Featured Projects)</h2>
         <div class="projects-grid">
           <div class="project-card">
-            <div class="project-tag">HTML / CSS / RWD</div>
-            <h3>響應式個人履歷網站</h3>
-            <p>使用現代 HTML5 語意化標籤與 Flexbox 排版打造，支援多端響應式瀏覽。</p>
+            <div class="project-tag">KMP / Kotlin / Compose</div>
+            <h3>FishingNav KMP - 離線航海導航系統</h3>
+            <p>整合 OSMDroid 與 MBTiles 離線地圖格式，優化弱訊號下 GPS/AGPS 定位與 GPX/KML 軌跡渲染，展現極致效能調優能力。</p>
           </div>
-          <div class="project-card placeholder">
-            <div class="project-tag">Coming Soon</div>
-            <h3>React + TypeScript 全端 SaaS 專案</h3>
-            <p>規劃中：支援多國語言切換與 API 串接的會員儀表板應用。</p>
+          <div class="project-card">
+            <div class="project-tag">Web / HTML5 / CSS3 / Vercel</div>
+            <h3>現代化 Web 個人作品集網站</h3>
+            <p>運用現代語意化 HTML5、Flexbox 與 CSS Grid 打造，使用 Git 版控並透過 Vercel 完成自動化 CI/CD 部署。</p>
           </div>
         </div>
       </section>
@@ -84,7 +102,7 @@
 
     <!-- 頁尾 -->
     <footer id="contact">
-      <p>© 2026 Developer Portfolio. Built with Modern Web Technologies.</p>
+      <p>© 2026 Shu-hua Liu. Built with Modern Web Technologies.</p>
     </footer>
   </body>
 </html>
