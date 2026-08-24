@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth; /* 讓點擊導覽列連結時能平滑滑動 */
+}
 /* 全局設定 */
 :root {
   --primary-color: #2563eb;
@@ -241,4 +244,14 @@ footer {
 footer a {
   color: var(--primary-color);
   text-decoration: none;
+}
+
+/* 卡片懸浮滑過效果 */
+.about-card, .skill-card, .project-card, .timeline-item {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-card:hover, .skill-card:hover, .project-card:hover, .timeline-item:hover {
+  transform: translateY(-3px); /* 向上微浮 3 像素 */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* 讓陰影變深 */
 }
