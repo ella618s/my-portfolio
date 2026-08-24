@@ -1,189 +1,220 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>劉淑華 Shu-hua Liu | Senior Mobile & Full-stack Engineer Portfolio</title>
-    
+
     <!-- 網頁描述：讓 Google 搜尋與社群分享時能看到簡介 -->
-    <meta name="description" content="劉淑華 (Shu-hua Liu) - 8+ 年經驗資深 Mobile 工程師，專注於 KMP 跨平台、Android 原生開發與 React / Node.js 全端技術。" />
-    
+    <meta name="description"
+        content="劉淑華 (Shu-hua Liu) - 8+ 年經驗資深 Mobile 工程師，專注於 KMP 跨平台、Android 原生開發與 React / Node.js 全端技術。" />
+
     <!-- 頁籤圖示 (Favicon)：瀏覽器分頁上顯示的小圖示 -->
     <link rel="icon" href="https://fav.farm/💻" />
-    
+
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- 頂部導覽列 -->
     <nav class="navbar">
-      <div class="logo">Shu-hua.Dev</div>
-      <ul class="nav-links">
-        <li><a href="#about">關於我</a></li>
-        <li><a href="#experience">工作經歷</a></li>
-        <li><a href="#projects">重點專案</a></li>
-        <li><a href="#skills">技術技能</a></li>
-        <li><a href="#contact" class="btn-primary">聯絡我</a></li>
-      </ul>
+        <div class="logo">Shu-hua.Dev</div>
+        <ul class="nav-links">
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#experience">工作經歷</a></li>
+            <li><a href="#projects">重點專案</a></li>
+            <li><a href="#skills">技術技能</a></li>
+            <li><a href="#contact" class="btn-primary">聯絡我</a></li>
+        </ul>
     </nav>
 
     <!-- 主頁 Hero 區塊 -->
     <header class="hero">
-      <div class="hero-content">
-        <span class="badge">Senior Mobile Engineer & Full-stack Aspirant</span>
-        <h1>你好，我是 劉淑華 (Shu-hua Liu)</h1>
-        <p>
-          擁有 8+ 年原生開發經驗的Android資深工程師。精通 Kotlin/Java 雙語言與 MVVM 架構設計，擅長從 0 到 1 打造產品與大型舊系統重構。近期聚焦於 <strong>Kotlin Multiplatform (KMP) 跨平台開發</strong>，並積極擴展 <strong>React / TypeScript 全端技術</strong>，目標打造高穩定度的 Web & Mobile 產品！
-        </p>
-        <div class="hero-btns">
-            <a href="https://github.com/ella618s/FishingNavKMP" target="_blank" class="btn-primary">檢視 GitHub 專案</a>
-            <a href="https://www.linkedin.com/in/%E6%B7%91%E8%8F%AF-%E5%8A%89-88a6b4405/" target="_blank" class="btn-secondary">LinkedIn 檔案</a>
-            <a href="resume.pdf" download class="btn-secondary">📄 下載履歷 (PDF)</a>
-            <a href="mailto:ella618s@yahoo.com.tw" class="btn-secondary">Email 聯繫我</a>
+        <div class="hero-content">
+            <span class="badge">Senior Mobile Engineer & Full-stack Aspirant</span>
+            <h1>你好，我是 劉淑華 (Shu-hua Liu)</h1>
+            <p>
+                擁有 8+ 年開發經驗的資深工程師。精通 Kotlin/Java 雙語言與 MVVM 架構設計，擅長從 0 到 1 打造產品與大型舊系統重構。近期聚焦於 <strong>Kotlin
+                    Multiplatform
+                    (KMP) 跨平台開發</strong>，並積極擴展 <strong>React / TypeScript 全端技術</strong>！
+            </p>
+            <div class="hero-btns">
+                <a href="https://github.com/ella618s/FishingNavKMP" target="_blank" class="btn-primary">檢視 GitHub 專案</a>
+                <a href="https://www.linkedin.com/in/%E6%B7%91%E8%8F%AF-%E5%8A%89-88a6b4405/" target="_blank"
+                    class="btn-secondary">LinkedIn 檔案</a>
+                <a href="resume.pdf" download class="btn-secondary">📄 下載履歷 (PDF)</a>
+                <a href="mailto:ella618s@yahoo.com.tw" class="btn-secondary">Email 聯繫我</a>
+            </div>
+
+            <!-- 新增：數據亮點欄 -->
+            <div class="stats-bar">
+                <div class="stat-item">
+                    <span class="stat-num">8+</span>
+                    <span class="stat-label">年開發經驗</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">KMP</span>
+                    <span class="stat-label">跨平台架構</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-num">Full-Stack</span>
+                    <span class="stat-label">React & Node.js</span>
+                </div>
+            </div>
         </div>
-    </div>
     </header>
 
     <!-- 主要內容區 -->
     <main>
-      <!-- 關於我區塊 -->
-      <section id="about" class="section">
-        <h2 class="section-title">關於我 (About Me)</h2>
-        <div class="about-card">
-          <p>
-            「用好的技術解決實際問題，讓產品越來越穩定、好用。」我是一位熱衷於技術深度研究與實戰落地的資深工程師。不論是面對舊有程式碼的修復與重構，或是引進現代化新技術，我的目標始終是確保系統穩定流暢與極致的使用者體驗。
-          </p>
-          <br />
-          <p>
-            <strong>【全端轉型與前瞻佈局】</strong><br />
-            為因應現代化跨平台與全端架構趨勢，我除了運用 Kotlin Multiplatform (KMP) 與 Jetpack Compose 打造離線導航系統外，目前正<strong>全力投入現代化 Web 前端 (React / TypeScript) 與 Node.js 後端開發</strong>。目標結合 8+ 年行動端底層能力與現代 Web 技術，成為具備端到端 (End-to-End) 實作能力的全端工程師！
-          </p>
-        </div>
-      </section>
-
-      <!-- 詳細工作經歷區塊 -->
-      <section id="experience" class="section">
-        <h2 class="section-title">工作經歷 (Work Experience)</h2>
-        <div class="timeline">
-          
-          <!-- 專案/個人開發 -->
-          <div class="timeline-item">
-            <div class="timeline-header">
-              <h3>獨立軟體開發者 (Android / KMP)</h3>
-              <span class="timeline-date">2025/02 – 現在</span>
+        <!-- 關於我區塊 -->
+        <section id="about" class="section">
+            <h2 class="section-title">關於我 (About Me)</h2>
+            <div class="about-card">
+                <p>
+                    「用好的技術解決實際問題，讓產品越來越穩定、好用。」我是一位熱衷於技術深度研究與實戰落地的資深工程師。不論是面對舊有程式碼的修復與重構，或是引進現代化新技術，我的目標始終是確保系統穩定流暢與極致的使用者體驗。
+                </p>
+                <br />
+                <p>
+                    <strong>【全端轉型與前瞻佈局】</strong><br />
+                    為因應現代化跨平台與全端架構趨勢，我除了運用 Kotlin Multiplatform (KMP) 與 Jetpack Compose 打造離線導航系統外，目前正<strong>全力投入現代化 Web
+                        前端 (React / TypeScript) 與 Node.js 後端開發</strong>。目標結合 8+ 年行動端底層能力與現代 Web 技術，成為具備端到端 (End-to-End)
+                    實作能力的全端工程師！
+                </p>
             </div>
-            <p class="company-sub">個人專案實務 / 獨立開發</p>
-            <ul class="experience-list">
-              <li><strong>專案實績：</strong>獨立開發「海上航海與離線導航系統 (FishingNav KMP)」。</li>
-              <li><strong>跨平台架構：</strong>運用 Kotlin Multiplatform (KMP) + Jetpack Compose 與 Android View 打造現代化架構，實作核心邏輯共享。</li>
-              <li><strong>效能調優：</strong>針對 OSMDroid 與 MBTiles 離線地圖進行渲染優化，解決無網路環境下的海量 GeoJSON 圖資顯示限制。</li>
-              <li><strong>即時訊號處理：</strong>整合 GPS + AGPS 技術補償演算，大幅提高弱訊號環境下的定位更新速度與精準度。</li>
-              <li><strong>端側 AI 探索：</strong>持續研究 On-device AI 輕量化模型於行動端的落地與整合實作。</li>
-            </ul>
-          </div>
+        </section>
 
-          <!-- 三立電視 -->
-          <div class="timeline-item">
-            <div class="timeline-header">
-              <h3>Android 工程師</h3>
-              <span class="timeline-date">2023/07 – 2024/03</span>
+        <!-- 詳細工作經歷區塊 -->
+        <section id="experience" class="section">
+            <h2 class="section-title">工作經歷 (Work Experience)</h2>
+            <div class="timeline">
+
+                <!-- 專案/個人開發 -->
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>獨立軟體開發者 (Android / KMP)</h3>
+                        <span class="timeline-date">2025/02 – 現在</span>
+                    </div>
+                    <p class="company-sub">個人專案實務 / 獨立開發</p>
+                    <ul class="experience-list">
+                        <li><strong>專案實績：</strong>獨立開發「海上航海與離線導航系統 (FishingNav KMP)」。</li>
+                        <li><strong>跨平台架構：</strong>運用 Kotlin Multiplatform (KMP) + Jetpack Compose 與 Android View
+                            打造現代化架構，實作核心邏輯共享。</li>
+                        <li><strong>效能調優：</strong>針對 OSMDroid 與 MBTiles 離線地圖進行渲染優化，解決無網路環境下的海量 GeoJSON 圖資顯示限制。</li>
+                        <li><strong>即時訊號處理：</strong>整合 GPS + AGPS 技術補償演算，大幅提高弱訊號環境下的定位更新速度與精準度。</li>
+                        <li><strong>端側 AI 探索：</strong>持續研究 On-device AI 輕量化模型於行動端的落地與整合實作。</li>
+                    </ul>
+                </div>
+
+                <!-- 三立電視 -->
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>Android 工程師</h3>
+                        <span class="timeline-date">2023/07 – 2024/03</span>
+                    </div>
+                    <p class="company-sub">三立電視股份有限公司</p>
+                    <ul class="experience-list">
+                        <li><strong>系統重構：</strong>參與新版 App 技術選型，將過往 Java 舊程式碼逐步遷移至 Kotlin，大幅提升團隊維護效率。</li>
+                        <li><strong>模組化實作：</strong>拆解舊有業務邏輯，以 Kotlin 重新封裝核心模組，確保改版過程功能穩定無縫接軌。</li>
+                        <li><strong>品質維護：</strong>撰寫開發 Helper 工具類別與團隊技術文件，協助排查日常 Bug 與維護版本發布。</li>
+                    </ul>
+                </div>
+
+                <!-- 禾智 -->
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>軟體工程師 (Android)</h3>
+                        <span class="timeline-date">2021/09 – 2023/07</span>
+                    </div>
+                    <p class="company-sub">禾智有限公司</p>
+                    <ul class="experience-list">
+                        <li><strong>進階功能：</strong>實作直播懸浮視窗 (PiP, Picture-in-Picture) 功能，確保使用者在多工作業狀態下的播放穩定度。</li>
+                        <li><strong>UI/UX 效能優化：</strong>運用 LiveData 與字母索引機制，優化複雜狀態下的資料篩選與搜尋流暢度。</li>
+                        <li><strong>網路層封裝：</strong>完成 Retrofit2 + OkHttp3 底層優化與 Crash 追蹤機制，顯著提升系統穩定度。</li>
+                    </ul>
+                </div>
+
+                <!-- 獨立接案 -->
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>軟體工程師 (獨立專案接案)</h3>
+                        <span class="timeline-date">2019/04 – 2021/09</span>
+                    </div>
+                    <p class="company-sub">力訊科技 / 電腦軟體服務</p>
+                    <ul class="experience-list">
+                        <li><strong>金流串接：</strong>成功整合 LinePay、Google Pay 等第三方金流 SDK 至 App 產品。</li>
+                        <li><strong>原生/Web 通訊：</strong>深入處理 WebView 與 Android 原生系統溝通邏輯，解決跨 Android 版本之相容性問題。</li>
+                        <li><strong>硬體整合：</strong>結合 Beacon 技術進行室內導航與停車位搜尋功能開發。</li>
+                    </ul>
+                </div>
+
+                <!-- 昕力資訊 -->
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3>軟體工程師</h3>
+                        <span class="timeline-date">2018/07 – 2019/04</span>
+                    </div>
+                    <p class="company-sub">昕力資訊</p>
+                    <ul class="experience-list">
+                        <li><strong>資安防護：</strong>開發 Android Root 檢測機制與資安預警功能。</li>
+                        <li><strong>影像開發：</strong>開發美髮模組之影像拍攝與即時標註效能調優。</li>
+                    </ul>
+                </div>
+
             </div>
-            <p class="company-sub">三立電視股份有限公司</p>
-            <ul class="experience-list">
-              <li><strong>系統重構：</strong>參與新版 App 技術選型，將過往 Java 舊程式碼逐步遷移至 Kotlin，大幅提升團隊維護效率。</li>
-              <li><strong>模組化實作：</strong>拆解舊有業務邏輯，以 Kotlin 重新封裝核心模組，確保改版過程功能穩定無縫接軌。</li>
-              <li><strong>品質維護：</strong>撰寫開發 Helper 工具類別與團隊技術文件，協助排查日常 Bug 與維護版本發布。</li>
-            </ul>
-          </div>
+        </section>
 
-          <!-- 禾智 -->
-          <div class="timeline-item">
-            <div class="timeline-header">
-              <h3>軟體工程師 (Android)</h3>
-              <span class="timeline-date">2021/09 – 2023/07</span>
+        <!-- 重點專案區塊 -->
+        <section id="projects" class="section">
+            <h2 class="section-title">重點專案 (Featured Projects)</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-tag">KMP / Kotlin / Compose / OSMDroid</div>
+                    <h3>FishingNav KMP - 離線航海導航系統</h3>
+                    <p>獨立研發之海上離線導航解決方案。克服無網路環境下的 MBTiles 圖資載入，優化弱訊號 GPS/AGPS 訊號補償演算法，並解析 GPX/KML 軌跡資料進行動態圖層繪製。</p>
+                    <a href="https://github.com/ella618s/FishingNavKMP" target="_blank" class="project-link">檢視 GitHub
+                        Repository →</a>
+                </div>
+                <div class="project-card">
+                    <div class="project-tag">Web / React / TypeScript / Vercel</div>
+                    <h3>現代化 Web 個人作品集網站</h3>
+                    <p>使用現代語意化 HTML5、CSS Flexbox/Grid 佈局打造。整合 Git 版本控制並透過 Vercel 實現 CI/CD 自動化部署，展現全端與網頁開發決心。</p>
+                    <div style="margin-top: 0.75rem; display: flex; gap: 1rem;">
+                        <a href="https://my-portfolio-sandy-two-4bnjmkobt7.vercel.app" target="_blank"
+                            class="project-link">檢視線上網站 →</a>
+                        <a href="https://github.com/ella618s/my-portfolio" target="_blank" class="project-link">GitHub
+                            原始碼 →</a>
+                    </div>
+                </div>
+        </section>
+
+        <!-- 技術技能區塊 -->
+        <section id="skills" class="section">
+            <h2 class="section-title">專長與擅長工具 (Tech Stack)</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Mobile & Architecture</h3>
+                    <p>Kotlin, Java, KMP (Kotlin Multiplatform), Jetpack Compose, MVVM, Coroutines, LiveData, Android
+                        SDK</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Web & Full-stack (Active)</h3>
+                    <p>HTML5, CSS3, JavaScript (ES6+), TypeScript, React, Node.js, WebAPIs, WebView 通訊</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Domain Knowledge & Tools</h3>
+                    <p>離線地圖渲染 (OSMDroid/MBTiles)、GPS/AGPS 補償算法、第三方金流 (LinePay/Google Pay)、Git/GitHub, Retrofit2,
+                        OkHttp3, Android Studio, VS Code, Vercel</p>
+                </div>
             </div>
-            <p class="company-sub">禾智有限公司</p>
-            <ul class="experience-list">
-              <li><strong>進階功能：</strong>實作直播懸浮視窗 (PiP, Picture-in-Picture) 功能，確保使用者在多工作業狀態下的播放穩定度。</li>
-              <li><strong>UI/UX 效能優化：</strong>運用 LiveData 與字母索引機制，優化複雜狀態下的資料篩選與搜尋流暢度。</li>
-              <li><strong>網路層封裝：</strong>完成 Retrofit2 + OkHttp3 底層優化與 Crash 追蹤機制，顯著提升系統穩定度。</li>
-            </ul>
-          </div>
-
-          <!-- 獨立接案 -->
-          <div class="timeline-item">
-            <div class="timeline-header">
-              <h3>軟體工程師 (獨立專案接案)</h3>
-              <span class="timeline-date">2019/04 – 2021/09</span>
-            </div>
-            <p class="company-sub">力訊科技 / 電腦軟體服務</p>
-            <ul class="experience-list">
-              <li><strong>金流串接：</strong>成功整合 LinePay、Google Pay 等第三方金流 SDK 至 App 產品。</li>
-              <li><strong>原生/Web 通訊：</strong>深入處理 WebView 與 Android 原生系統溝通邏輯，解決跨 Android 版本之相容性問題。</li>
-              <li><strong>硬體整合：</strong>結合 Beacon 技術進行室內導航與停車位搜尋功能開發。</li>
-            </ul>
-          </div>
-
-          <!-- 昕力資訊 -->
-          <div class="timeline-item">
-            <div class="timeline-header">
-              <h3>軟體工程師</h3>
-              <span class="timeline-date">2018/07 – 2019/04</span>
-            </div>
-            <p class="company-sub">昕力資訊</p>
-            <ul class="experience-list">
-              <li><strong>資安防護：</strong>開發 Android Root 檢測機制與資安預警功能。</li>
-              <li><strong>影像開發：</strong>開發美髮模組之影像拍攝與即時標註效能調優。</li>
-            </ul>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- 重點專案區塊 -->
-      <section id="projects" class="section">
-        <h2 class="section-title">重點專案 (Featured Projects)</h2>
-        <div class="projects-grid">
-          <div class="project-card">
-            <div class="project-tag">KMP / Kotlin / Compose / OSMDroid</div>
-            <h3>FishingNav KMP - 離線航海導航系統</h3>
-            <p>獨立研發之海上離線導航解決方案。克服無網路環境下的 MBTiles 圖資載入，優化弱訊號 GPS/AGPS 訊號補償演算法，並解析 GPX/KML 軌跡資料進行動態圖層繪製。</p>
-            <a href="https://github.com/ella618s/FishingNavKMP" target="_blank" class="project-link">檢視 GitHub Repository →</a>
-          </div>
-          <div class="project-card">
-            <div class="project-tag">Web / React / TypeScript / Vercel</div>
-            <h3>現代化 Web 個人作品集網站</h3>
-            <p>使用現代語意化 HTML5、CSS Flexbox/Grid 佈局打造。整合 Git 版本控制並透過 Vercel 實現 CI/CD 自動化部署，展現全端與網頁開發決心。</p>
-            <div style="margin-top: 0.75rem; display: flex; gap: 1rem;">
-              <a href="https://my-portfolio-sandy-two-4bnjmkobt7.vercel.app" target="_blank" class="project-link">檢視線上網站 →</a>
-              <a href="https://github.com/ella618s/my-portfolio" target="_blank" class="project-link">GitHub 原始碼 →</a>
-            </div>
-          </div>
-      </section>
-
-      <!-- 技術技能區塊 -->
-      <section id="skills" class="section">
-        <h2 class="section-title">專長與擅長工具 (Tech Stack)</h2>
-        <div class="skills-grid">
-          <div class="skill-card">
-            <h3>Mobile & Architecture</h3>
-            <p>Kotlin, Java, KMP (Kotlin Multiplatform), Jetpack Compose, MVVM, Coroutines, LiveData, Android SDK</p>
-          </div>
-          <div class="skill-card">
-            <h3>Web & Full-stack (Active)</h3>
-            <p>HTML5, CSS3, JavaScript (ES6+), TypeScript, React, Node.js, WebAPIs, WebView 通訊</p>
-          </div>
-          <div class="skill-card">
-            <h3>Domain Knowledge & Tools</h3>
-            <p>離線地圖渲染 (OSMDroid/MBTiles)、GPS/AGPS 補償算法、第三方金流 (LinePay/Google Pay)、Git/GitHub, Retrofit2, OkHttp3, Android Studio, VS Code, Vercel</p>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
 
     <!-- 頁尾 -->
     <footer id="contact">
-      <p>聯繫方式：<a href="mailto:ella618s@yahoo.com.tw">ella618s@yahoo.com.tw</a> | Phone: 0958-192-640</p>
-      <p>© 2026 Shu-hua Liu. Built with Modern Web Technologies.</p>
+        <p>聯繫方式：<a href="mailto:ella618s@yahoo.com.tw">ella618s@yahoo.com.tw</a> | Phone: 0958-192-640</p>
+        <p>© 2026 Shu-hua Liu. Built with Modern Web Technologies.</p>
     </footer>
-  </body>
+</body>
+
 </html>
