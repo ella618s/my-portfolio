@@ -255,3 +255,30 @@ footer a {
   transform: translateY(-3px); /* 向上微浮 3 像素 */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* 讓陰影變深 */
 }
+
+/* 手機版 (RWD) 響應式微調 */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .nav-links {
+    gap: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+}
