@@ -58,7 +58,7 @@ body {
   color: var(--primary-color);
 }
 
-/* 按鈕樣式 */
+/* 按鈕與連結 */
 .btn-primary {
   background-color: var(--primary-color);
   color: #ffffff !important;
@@ -84,10 +84,22 @@ body {
   display: inline-block;
 }
 
+.project-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
 /* Hero 區塊 */
 .hero {
   text-align: center;
-  padding: 5rem 1.5rem 3rem;
+  padding: 4rem 1.5rem 2rem;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -104,14 +116,14 @@ body {
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   margin-bottom: 1rem;
 }
 
 .hero p {
-  font-size: 1.125rem;
+  font-size: 1.05rem;
   color: var(--text-secondary);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero-btns {
@@ -120,15 +132,15 @@ body {
   gap: 1rem;
 }
 
-/* 內容版面 */
+/* 內容區塊 */
 .section {
   max-width: 900px;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 2.5rem 1.5rem;
 }
 
 .section-title {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   margin-bottom: 1.5rem;
   position: relative;
   padding-left: 0.75rem;
@@ -150,20 +162,69 @@ body {
   padding: 1.5rem;
   border-radius: 12px;
   border: 1px solid var(--border-color);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 
+/* 時間軸 (工作經歷) */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.timeline-item {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-header h3 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+
+.timeline-date {
+  font-size: 0.875rem;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.company-sub {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.experience-list {
+  padding-left: 1.2rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.experience-list li {
+  margin-bottom: 0.4rem;
+}
+
+/* Grid 版面 */
 .skills-grid, .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
 .project-tag {
   font-size: 0.75rem;
   color: var(--primary-color);
   font-weight: 700;
-  text-transform: uppercase;
   margin-bottom: 0.5rem;
 }
 
@@ -175,4 +236,9 @@ footer {
   color: var(--text-secondary);
   font-size: 0.875rem;
   margin-top: 3rem;
+}
+
+footer a {
+  color: var(--primary-color);
+  text-decoration: none;
 }
