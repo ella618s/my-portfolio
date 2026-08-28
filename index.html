@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>劉淑華 Shu-hua Liu | Senior Mobile & Full-stack Engineer Portfolio</title>
 
-    <!-- 網頁描述：讓 Google 搜尋與社群分享時能看到簡介 -->
+    <!-- 網頁描述 -->
     <meta name="description"
-        content="劉淑華 (Shu-hua Liu) - 8+ 年經驗資深 Mobile 工程師，專注於 KMP 跨平台、Android 原生開發與 React / Node.js 全端技術。" />
+        content="劉淑華 (Shu-hua Liu) - 8+ 年經驗資深 Mobile 工程師，專注於 KMP 跨平台、Android 原生開發與 Go / Node.js 後端與現代 Web 技術。" />
 
-    <!-- 頁籤圖示 (Favicon)：瀏覽器分頁上顯示的小圖示 -->
+    <!-- 頁籤圖示 (Favicon) -->
     <link rel="icon" href="https://fav.farm/💻" />
 
     <link rel="stylesheet" href="style.css" />
@@ -33,12 +33,12 @@
     <!-- 主頁 Hero 區塊 -->
     <header class="hero">
         <div class="hero-content">
-            <span class="badge">Senior Mobile Engineer | Learning Full-stack Web</span>
+            <span class="badge">Senior Mobile Engineer | Learning Full-stack Web & Backend</span>
             <h1>你好，我是 劉淑華 (Shu-hua Liu)</h1>
             <p>
                 擁有 8+ 年開發經驗的資深 Mobile 工程師。精通 Kotlin/Java 雙語言與 MVVM 架構設計，擅長從 0 到 1 打造產品與大型舊系統重構。近期聚焦於 <strong>Kotlin
-                    Multiplatform (KMP) 跨平台開發</strong>，同時正在<strong>自主學習現代 Web 前端（React / TypeScript）與 HTML/CSS
-                    基礎</strong>，目標持續擴展全端開發視野！
+                    Multiplatform (KMP) 跨平台開發</strong>，同時深度學習<strong>Go (Golang) 後端微服務、WebSocket 實時推播、PostGIS 空間查詢與
+                    DevOps CI/CD 流程</strong>，目標持續擴展全端開發視野！
             </p>
             <div class="hero-btns">
                 <a href="https://github.com/ella618s/FishingNavKMP" target="_blank" class="btn-primary">檢視 GitHub 專案</a>
@@ -59,8 +59,8 @@
                     <span class="stat-label">跨平台架構</span>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-num">Full-Stack</span>
-                    <span class="stat-label">Web 學習中</span>
+                    <span class="stat-num">Go & PostGIS</span>
+                    <span class="stat-label">後端/空間微服務</span>
                 </div>
             </div>
         </div>
@@ -78,9 +78,9 @@
                 <br />
                 <p>
                     <strong>【全端轉型與前瞻佈局】</strong><br />
-                    為因應現代化跨平台與全端架構趨勢，我除了運用 Kotlin Multiplatform (KMP) 與 Jetpack Compose 打造離線導航系統外，目前正<strong>全力投入現代化 Web
-                        前端 (React / TypeScript) 與 Node.js 後端開發</strong>。目標結合 8+ 年行動端底層能力與現代 Web 技術，成為具備端到端 (End-to-End)
-                    實作能力的全端工程師！
+                    為因應現代化跨平台與全端架構趨勢，我除了運用 Kotlin Multiplatform (KMP) 與 Jetpack Compose 打造離線導航系統外，目前正<strong>全力投入 Go
+                        (Golang) 微服務後端開發、WebSocket 長連線實時推播、PostGIS 地理資訊運算與 GitHub Actions CI/CD</strong>。目標結合 8+
+                    年行動端底層能力與後端雲端技術，成為具備端到端 (End-to-End) 實作能力的全端工程師！
                 </p>
             </div>
         </section>
@@ -90,21 +90,27 @@
             <h2 class="section-title">全端轉型學習日誌 (Learning Progress)</h2>
             <div class="timeline">
 
-                <!-- 學習記錄 #2：Go 後端與資料庫 & Docker 容器化 -->
+                <!-- 學習記錄 #2：Go 後端微服務、WebSocket 與 PostGIS 空間查詢 -->
                 <div class="timeline-item">
                     <div class="timeline-header">
-                        <h3>Go (Golang) 後端微服務 & 雲端容器化實作</h3>
-                        <span class="timeline-date">2026/08/26</span>
+                        <h3>Go (Golang) 後端微服務：WebSocket 實時推播 & PostGIS 空間查詢</h3>
+                        <span class="timeline-date">2026/08/28</span>
                     </div>
-                    <p class="company-sub">後端架構 / Gin Framework / PostgreSQL / GORM ORM / Docker / Render Cloud</p>
+                    <p class="company-sub">Go / Gin Framework / WebSocket / PostGIS (Spatial Database) / Docker Compose
+                        / GitHub Actions CI/CD</p>
                     <ul class="experience-list">
-                        <li><strong>環境與語法：</strong>掌握 Go 強型態機制、Struct 結構體與 JSON 序列化對照（Kotlin Data Class）。</li>
-                        <li><strong>RESTful API：</strong>運用 <strong>Gin Web Framework</strong> 實作動態路由、Query/Path 參數解析與狀態碼回應。</li>
-                        <li><strong>Middleware 權限防禦：</strong>實作自訂 AuthMiddleware 進行 Header API Token 驗證與請求攔截。</li>
-                        <li><strong>企業級資料庫：</strong>整合 <strong>GORM ORM</strong> 與 <strong>PostgreSQL</strong>，實作 AutoMigrate 自動建立 Schema 與 CRUD 資料庫存取。</li>
-                        <li><strong>容器化與雲端部署 (DevOps)：</strong>撰寫 `Dockerfile` 多階段編譯與 `docker-compose.yml`，處理 `tzdata` 時區依賴；成功將 Go API 與 PostgreSQL 部署至 <strong>Render 雲端平台</strong> 實現雲端正式上線。</li>
-                        <li><strong>自動化測試 (Unit Testing)：</strong>運用 Go `testing` 封包、`httptest` 與 `testify/assert` 斷言套件撰寫單元測試，涵蓋 API 路由狀態碼驗證與 AuthMiddleware 權限攔截測試。</li>
-                        <li><strong>專案成果：</strong>開源 <a href="https://github.com/ella618s/go-backend-demo" target="_blank" style="color: #0070f3;">go-backend-demo Repository</a>｜線上 <a href="https://go-backend-demo.onrender.com/api/v1/jobs" target="_blank" style="color: #0070f3;">Live API 端點</a>。</li>
+                        <li><strong>WebSocket 實時引擎：</strong>使用 `gorilla/websocket` 與 Go 協程 (Goroutine/Channel)
+                            打造雙向長連線廣播機制，降低伺服器輪詢開銷，實現即時海況資料推播。</li>
+                        <li><strong>PostGIS 空間運算：</strong>整合 PostgreSQL + PostGIS 擴充套件，運用 `ST_DWithin` 指令實現高效率 5
+                            公里半徑動態地理圍欄與危險海域空間查詢 API。</li>
+                        <li><strong>自動化 CI/CD 測試：</strong>使用 Go `httptest` 與 `testify` 撰寫單元測試，並配置 <strong>GitHub Actions
+                                Workflow</strong>，實現每次 Code Push 即自動跑測試與構建 Docker Image。</li>
+                        <li><strong>容器化部署 (DevOps)：</strong>透過 Docker Compose 一鍵啟動 Go API 服務與 PostGIS 資料庫，並成功將後端部署至
+                            Render 雲端平台。</li>
+                        <li><strong>專案成果：</strong>開源 <a href="https://github.com/ella618s/go-backend-demo"
+                                target="_blank" style="color: #0070f3;">go-backend-demo Repository</a>｜線上 <a
+                                href="https://go-backend-demo.onrender.com/api/v1/sea-conditions" target="_blank"
+                                style="color: #0070f3;">Live API 端點</a>。</li>
                     </ul>
                 </div>
 
@@ -215,8 +221,23 @@
                     <a href="https://github.com/ella618s/FishingNavKMP" target="_blank" class="project-link">檢視 GitHub
                         Repository →</a>
                 </div>
+
+                <!-- Go 後端微服務專案卡片 -->
                 <div class="project-card">
-                    <div class="project-tag">Web 基礎實作練習 (In Progress)</div>
+                    <div class="project-tag">Go / WebSocket / PostGIS / CI-CD</div>
+                    <h3>Go 實時海況與地理圍欄微服務 (Ocean Safety API)</h3>
+                    <p>使用 Go (Gin) 建構的高效能微服務。整合 WebSocket 實時雙向廣播推播海況數據，並透過 PostgreSQL + PostGIS 進行 5 公里半徑地理圍欄危險區域空間查詢。配置
+                        GitHub Actions 實現單元測試自動化與 Docker 容器化雲端部署。</p>
+                    <div style="margin-top: 0.75rem; display: flex; gap: 1rem;">
+                        <a href="https://go-backend-demo.onrender.com/api/v1/sea-conditions" target="_blank"
+                            class="project-link">檢視線上 API →</a>
+                        <a href="https://github.com/ella618s/go-backend-demo" target="_blank"
+                            class="project-link">GitHub 原始碼 →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-tag">Web / HTML5 / CSS3 / Vercel</div>
                     <h3>現代化 Web 個人作品集網站</h3>
                     <p>前端網頁入門學習實踐專案。運用語意化 HTML5、CSS 佈局與 Git 版本控制打造，並透過 Vercel 完成自動化部署，作為邁向全端學習的起點。</p>
                     <div style="margin-top: 0.75rem; display: flex; gap: 1rem;">
@@ -226,17 +247,7 @@
                             原始碼 →</a>
                     </div>
                 </div>
-                <!-- Go 學習卡片 -->
-                <div class="project-card">
-                    <div class="project-tag">Go / Gin / RESTful API</div>
-                    <h3>Go (Gin Framework) 後端服務 API 實作練習</h3>
-                    <p>使用 Go 語言與 Gin Web 框架建構高效能 RESTful API，實現動態路由匹配 (Path parameters)、JSON 自動綁定 (Binding)
-                        與自訂狀態碼回應，展現後端 API 開發實力。</p>
-                    <div style="margin-top: 0.75rem;">
-                        <a href="https://github.com/ella618s/go-backend-demo" target="_blank"
-                            class="project-link">GitHub 原始碼 (Go Demo) →</a>
-                    </div>
-                </div>
+            </div>
         </section>
 
         <!-- 技術技能區塊 -->
@@ -249,13 +260,14 @@
                         SDK</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Web Development (自主學習中)</h3>
-                    <p>HTML5 / CSS3 (基礎排版與 RWD)、JavaScript 基礎概念、Git / GitHub 版本控制、Vercel 部署實作</p>
+                    <h3>Backend & Spatial DB (後端與資料庫)</h3>
+                    <p>Go (Golang), Gin Framework, WebSocket (Gorilla), PostgreSQL, PostGIS (空間幾何查詢), GORM ORM, RESTful
+                        API</p>
                 </div>
                 <div class="skill-card">
-                    <h3>Domain Knowledge & Tools</h3>
-                    <p>離線地圖渲染 (OSMDroid/MBTiles)、GPS/AGPS 補償算法、第三方金流 (LinePay/Google Pay)、WebView 互動通訊、Retrofit2,
-                        OkHttp3</p>
+                    <h3>DevOps & Web (營運與前台)</h3>
+                    <p>Docker, Docker Compose, GitHub Actions (CI/CD Pipeline), Render Cloud, HTML5 / CSS3, Vercel, Git
+                        / GitHub</p>
                 </div>
             </div>
         </section>
